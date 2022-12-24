@@ -1,6 +1,7 @@
 sudo apt -y install openbox plank rofi tint2 xcompmgr 
 sudo apt -y install blueman network-manager
-sudo apt -y install firefox thunar gnome-icon-theme-full gnome-terminal
+sudo apt -y install firefox thunar gnome-terminal
+sudo apt -y install gnome-icon-theme-full
 sudo apt -y install python-tk
 sudo apt -y install python3-tk
 
@@ -19,5 +20,5 @@ echo "Exec=python3 /usr/share/openbox_config_menu/menu.py" >> /usr/share/applica
 echo "Path=/usr/share/openbox_config_menu/" >> /usr/share/applications/openbox_config_menu.desktop
 echo "Type=Application" >> /usr/share/applications/openbox_config_menu.desktop
 echo "Name=openbox config menu" >> /usr/share/applications/openbox_config_menu.desktop
-echo "Icon=/usr/share/openbox_config_menu/config_menu/config_icon.png" >> /usr/share/applications/openbox_config_menu.desktop
+echo "Icon=/usr/share/openbox_config_menu/config_menu/config_icon.ico" >> /usr/share/applications/openbox_config_menu.desktop
 
