@@ -77,7 +77,6 @@ window.geometry("300x300")
 
 
 
-
 frame = Frame(window)
 frame.pack( side = TOP )
 
