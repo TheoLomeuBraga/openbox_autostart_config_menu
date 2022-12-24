@@ -10,6 +10,7 @@ sudo cp -R ./config_menu /usr/share/openbox_config_menu
 sudo rm /usr/share/applications/openbox_config_menu.desktop
 sudo touch  /usr/share/applications/openbox_config_menu.desktop
 
+echo "[Desktop Entry]" >> /usr/share/applications/openbox_config_menu.desktop
 echo "Encoding=UTF-8" >> /usr/share/applications/openbox_config_menu.desktop
 echo "Version=1.0" >> /usr/share/applications/openbox_config_menu.desktop
 echo "Type=Application" >> /usr/share/applications/openbox_config_menu.desktop
