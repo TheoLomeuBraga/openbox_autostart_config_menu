@@ -11,7 +11,23 @@ class openbox_config:
         self.audio_applet = True
         self.bluetooth_applet = True
     def save(self):
-        print("")
+        os.system("rm ~/.config/openbox/autostart")
+        os.system("touch ~/.config/openbox/autostart")
+        if self.walpaper :
+            os.system('echo "nitrogen --restore &" >> ~/.config/openbox/autostart')
+        if self.window_compositor :
+            os.system('echo "xcompmgr -t5 -l5 -r4.2 -o.55  &" >> ~/.config/openbox/autostart')
+        if self.taskbar :
+            os.system('echo "tint2 &" >> ~/.config/openbox/autostart')
+        if self.dock :
+            os.system('echo "plank &" >> ~/.config/openbox/autostart')
+        if self.network_applet :
+            os.system('echo "nm-applet &" >> ~/.config/openbox/autostart')
+        if self.audio_applet :
+            os.system('echo "pnmixer &" >> ~/.config/openbox/autostart')
+        if self.bluetooth_applet :
+            os.system('echo "blueman-applet &" >> ~/.config/openbox/autostart')
+        
 
 def delete_configs():
     os.system("rm -r ~/.config/nitrogen")
