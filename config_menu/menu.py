@@ -8,3 +8,4 @@ class openbox_config:
         self.audio_applet = True
         self.bluetooth_applet = False
 
+import tkinter

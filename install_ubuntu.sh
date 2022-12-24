@@ -1,5 +1,6 @@
 sudo apt -y install openbox plank rofi tint2 xcompmgr 
 sudo apt -y install firefox thunar gnome-icon-theme-full gnome-terminal
+sudo apt-get install python-tk
 
 sudo cp -R /config_menu /usr/share
 
