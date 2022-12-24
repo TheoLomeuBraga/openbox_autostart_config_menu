@@ -59,11 +59,11 @@ def delete_configs():
     os.system("rm -r ~/.config/tint2")
 
 def move_configs():
-    os.system("cp -R config/nitrogen ~/.config/nitrogen")
-    os.system("cp -R config/openbox ~/.config/openbox")
-    os.system("cp -R config/plank ~/.config/plank")
-    os.system("cp -R config/rofi ~/.config/rofi")
-    os.system("cp -R config/tint2 ~/.config/tint2")
+    os.system("cp -R ./config/nitrogen ~/.config/nitrogen")
+    os.system("cp -R ./config/openbox ~/.config/openbox")
+    os.system("cp -R ./config/plank ~/.config/plank")
+    os.system("cp -R ./config/rofi ~/.config/rofi")
+    os.system("cp -R ./config/tint2 ~/.config/tint2")
 
 delete_configs()
 move_configs()
