@@ -2,7 +2,7 @@ sudo apt -y install openbox plank rofi tint2 xcompmgr
 sudo apt -y install firefox thunar gnome-icon-theme-full gnome-terminal
 sudo apt-get install python-tk
 
-sudo rmdir dir1 /usr/share/config_menu
+sudo rm -r /usr/share/config_menu
 sudo cp -R /config_menu /usr/share/config_menu
 
 sudo rm /usr/share/applications/openbox_config_menu.desktop
