@@ -1,6 +1,8 @@
 import os
 from tkinter import *
 
+
+
 class openbox_config:
     def __init__(self):
         self.walpaper = True
@@ -10,6 +12,20 @@ class openbox_config:
         self.network_applet = True
         self.audio_applet = True
         self.bluetooth_applet = True
+
+    def print_info(self):
+        print("walpaper "+str(self.walpaper))
+        print("window_compositor "+str(self.window_compositor))
+        print("taskbar "+str(self.taskbar))
+        print("dock "+str(self.dock))
+        print("network_applet "+str(self.network_applet))
+        print("audio_applet "+str(self.audio_applet))
+        print("bluetooth_applet "+str(self.bluetooth_applet))
+
+    def get(self):
+        self.walpaper = bool(walpaper_cb_var.get())
+        self.print_info()
+
     def save(self):
         os.system("rm ~/.config/openbox/autostart")
         os.system("touch ~/.config/openbox/autostart")
@@ -46,4 +62,52 @@ def move_configs():
 delete_configs()
 move_configs()
 
+ob_conf = openbox_config()
+
 window = Tk() 
+window.title('openbox config')
+window.geometry("300x500")
+
+
+
+
+
+frame = Frame(window)
+frame.pack( side = TOP )
+
+Label( frame, text="openbox config menu:" ).pack( side = TOP )
+
+#walpaper_cb
+walpaper_cb_var = IntVar()
+walpaper_cb = Checkbutton(frame, text='walpaper',variable=walpaper_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+walpaper_cb.select()
+walpaper_cb.pack( side = TOP )
+
+#window_compositor_cb
+window_compositor_cb_var = IntVar()
+window_compositor_cb = Checkbutton(frame, text='window compositor',variable=window_compositor_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+window_compositor_cb.select()
+window_compositor_cb.pack( side = TOP )
+
+#taskbar_cb
+#taskbar_cb
+
+#dock_cb
+#dock_cb
+
+#network_applet_cb
+#network_applet_cb
+
+#audio_applet_cb
+#audio_applet_cb
+
+#bluetooth_applet_cb
+#bluetooth_applet_cb
+
+
+
+
+
+
+
+window.mainloop()

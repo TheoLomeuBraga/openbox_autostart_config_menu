@@ -1,7 +1,8 @@
 sudo apt -y install openbox plank rofi tint2 xcompmgr 
 sudo apt -y install blueman network-manager
 sudo apt -y install firefox thunar gnome-icon-theme-full gnome-terminal
-sudo apt-get install python-tk
+sudo apt -y install python-tk
+sudo apt -y install python3-tk
 
 sudo rm -r /usr/share/config_menu
 sudo cp -R /config_menu /usr/share/config_menu
