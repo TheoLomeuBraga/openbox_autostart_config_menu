@@ -1,3 +1,5 @@
+from tkinter import *
+
 class openbox_config:
     def __init__(self):
         self.walpaper = True
@@ -8,4 +10,6 @@ class openbox_config:
         self.audio_applet = True
         self.bluetooth_applet = False
 
-import tkinter
+
+
+window = Tk() 
