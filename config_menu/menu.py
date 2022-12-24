@@ -13,10 +13,17 @@ class openbox_config:
     def save(self):
         print("")
 
+def delete_configs():
+    os.system("rm -r ~/.config/nitrogen/")
+    os.system("rm -r ~/.config/openbox/")
+    os.system("rm -r ~/.config/plank/")
+    os.system("rm -r ~/.config/rofi/")
+    os.system("rm -r ~/.config/tint2/")
+
 def move_configs():
     os.system("")
 
-
+delete_configs()
 move_configs()
 
 window = Tk() 
