@@ -14,14 +14,18 @@ class openbox_config:
         print("")
 
 def delete_configs():
-    os.system("rm -r ~/.config/nitrogen/")
-    os.system("rm -r ~/.config/openbox/")
-    os.system("rm -r ~/.config/plank/")
-    os.system("rm -r ~/.config/rofi/")
-    os.system("rm -r ~/.config/tint2/")
+    os.system("rm -r ~/.config/nitrogen")
+    os.system("rm -r ~/.config/openbox")
+    os.system("rm -r ~/.config/plank")
+    os.system("rm -r ~/.config/rofi")
+    os.system("rm -r ~/.config/tint2")
 
 def move_configs():
-    os.system("")
+    os.system("cp -R config/nitrogen ~/.config/nitrogen")
+    os.system("cp -R config/openbox ~/.config/openbox")
+    os.system("cp -R config/plank ~/.config/plank")
+    os.system("cp -R config/rofi ~/.config/rofi")
+    os.system("cp -R config/tint2 ~/.config/tint2")
 
 delete_configs()
 move_configs()
