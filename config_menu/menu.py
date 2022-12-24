@@ -24,6 +24,12 @@ class openbox_config:
 
     def get(self):
         self.walpaper = bool(walpaper_cb_var.get())
+        self.window_compositor = bool(window_compositor_cb_var.get())
+        self.taskbar = bool(taskbar_cb_var.get())
+        self.dock = bool(dock_cb_var.get())
+        self.network_applet = bool(network_applet_cb_var.get())
+        self.audio_applet = bool(audio_applet_cb_var.get())
+        self.bluetooth_applet = bool(bluetooth_applet_cb_var.get())
         self.print_info()
 
     def save(self):
@@ -66,7 +72,7 @@ ob_conf = openbox_config()
 
 window = Tk() 
 window.title('openbox config')
-window.geometry("300x500")
+window.geometry("300x300")
 
 
 
@@ -90,22 +96,37 @@ window_compositor_cb.select()
 window_compositor_cb.pack( side = TOP )
 
 #taskbar_cb
-#taskbar_cb
+taskbar_cb_var = IntVar()
+taskbar_cb = Checkbutton(frame, text='taskbar',variable=taskbar_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+taskbar_cb.select()
+taskbar_cb.pack( side = TOP )
 
 #dock_cb
-#dock_cb
+dock_cb_var = IntVar()
+dock_cb = Checkbutton(frame, text='dock',variable=dock_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+dock_cb.select()
+dock_cb.pack( side = TOP )
 
 #network_applet_cb
-#network_applet_cb
+network_applet_cb_var = IntVar()
+network_applet_cb = Checkbutton(frame, text='network applet',variable=network_applet_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+network_applet_cb.select()
+network_applet_cb.pack( side = TOP )
 
 #audio_applet_cb
-#audio_applet_cb
+audio_applet_cb_var = IntVar()
+audio_applet_cb = Checkbutton(frame, text='audio applet',variable=audio_applet_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+audio_applet_cb.select()
+audio_applet_cb.pack( side = TOP )
 
 #bluetooth_applet_cb
-#bluetooth_applet_cb
+bluetooth_applet_cb_var = IntVar()
+bluetooth_applet_cb = Checkbutton(frame, text='bluetooth applet',variable=bluetooth_applet_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+bluetooth_applet_cb.select()
+bluetooth_applet_cb.pack( side = TOP )
 
 
-
+Button(frame,text='applay',command=ob_conf.save).pack( side = TOP )
 
 
 
