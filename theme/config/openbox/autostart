@@ -1,0 +1,7 @@
+nitrogen --restore & 
+xcompmgr -t5 -l5 -r4.2 -o.55  & 
+plank & 
+tint2 &
+nm-applet & 
+blueman-applet &
+pnmixer
