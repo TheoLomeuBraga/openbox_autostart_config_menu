@@ -4,6 +4,7 @@ sudo apt-get install python-tk
 
 sudo cp -R /config_menu /usr/share
 
+sudo rm /usr/share/applications/openbox_config_menu.desktop
 sudo touch  /usr/share/applications/openbox_config_menu.desktop
 cat <<EOT >> /usr/share/applications/openbox_config_menu.desktop
 Encoding=UTF-8
