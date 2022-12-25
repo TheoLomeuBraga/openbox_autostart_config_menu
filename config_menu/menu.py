@@ -65,8 +65,8 @@ def move_configs():
     os.system("cp -R ./config/rofi ~/.config/rofi")
     os.system("cp -R ./config/tint2 ~/.config/tint2")
 
-delete_configs()
-move_configs()
+#delete_configs()
+#move_configs()
 
 ob_conf = openbox_config()
 
