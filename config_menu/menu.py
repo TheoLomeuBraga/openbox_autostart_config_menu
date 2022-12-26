@@ -5,7 +5,7 @@ from tkinter import *
 
 class openbox_config:
     def __init__(self):
-        self.walpaper = True
+        self.workspace = True
         self.window_compositor = True
         self.taskbar = True
         self.dock = True
@@ -14,7 +14,7 @@ class openbox_config:
         self.bluetooth_applet = True
 
     def print_info(self):
-        print("walpaper "+str(self.walpaper))
+        print("workspace "+str(self.workspace))
         print("window_compositor "+str(self.window_compositor))
         print("taskbar "+str(self.taskbar))
         print("dock "+str(self.dock))
@@ -23,7 +23,7 @@ class openbox_config:
         print("bluetooth_applet "+str(self.bluetooth_applet))
 
     def get(self):
-        self.walpaper = bool(walpaper_cb_var.get())
+        self.workspace = bool(workspace_cb_var.get())
         self.window_compositor = bool(window_compositor_cb_var.get())
         self.taskbar = bool(taskbar_cb_var.get())
         self.dock = bool(dock_cb_var.get())
@@ -35,8 +35,8 @@ class openbox_config:
     def save(self):
         os.system("rm ~/.config/openbox/autostart")
         os.system("touch ~/.config/openbox/autostart")
-        if self.walpaper :
-            os.system('echo "nitrogen --restore &" >> ~/.config/openbox/autostart')
+        if self.workspace :
+            os.system('echo "pcmanfm --desktop &" >> ~/.config/openbox/autostart')
         if self.window_compositor :
             os.system('echo "xcompmgr -t5 -l5 -r4.2 -o.55  &" >> ~/.config/openbox/autostart')
         if self.taskbar :
@@ -82,11 +82,11 @@ frame.pack( side = TOP )
 
 Label( frame, text="openbox config menu:" ).pack( side = TOP )
 
-#walpaper_cb
-walpaper_cb_var = IntVar()
-walpaper_cb = Checkbutton(frame, text='walpaper',variable=walpaper_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
-walpaper_cb.select()
-walpaper_cb.pack( side = TOP )
+#workspace_cb
+workspace_cb_var = IntVar()
+workspace_cb = Checkbutton(frame, text='workspace',variable=workspace_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+workspace_cb.select()
+workspace_cb.pack( side = TOP )
 
 #window_compositor_cb
 window_compositor_cb_var = IntVar()
