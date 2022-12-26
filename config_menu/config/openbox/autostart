@@ -1,7 +1,5 @@
-nitrogen --restore & 
-xcompmgr -t5 -l5 -r4.2 -o.55  & 
+nitrogen --restore &
+xcompmgr -t5 -l5 -r4.2 -o.55  &
 tint2 &
-plank & 
-nm-applet & 
-blueman-applet &
-pnmixer
+nm-applet &
+pnmixer &
