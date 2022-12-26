@@ -1,4 +1,4 @@
-sudo apt -y install openbox plank rofi tint2 xcompmgr pcmanfm
+sudo apt -y install openbox plank rofi tint2 xcompmgr pcmanfm nitrogen
 sudo apt -y install blueman network-manager
 sudo apt -y install firefox thunar gnome-terminal
 sudo apt -y install gnome-icon-theme-full
@@ -24,7 +24,7 @@ echo "Icon=/usr/share/openbox_autostart_config_menu/config_menu/config_icon.ico"
 
 
 
-
+rm -r ~/.config/nitrogen
 rm -r ~/.config/pcmanfm
 rm -r ~/.config/openbox
 rm -r ~/.config/plank
@@ -32,6 +32,7 @@ rm -r ~/.config/rofi
 rm -r ~/.config/tint2
 
 
+cp -R ./config_menu/config/nitrogen ~/.config/nitrogen
 cp -R ./config_menu/config/pcmanfm ~/.config/pcmanfm
 cp -R ./config_menu/config/openbox ~/.config/openbox
 cp -R ./config_menu/config/plank ~/.config/plank

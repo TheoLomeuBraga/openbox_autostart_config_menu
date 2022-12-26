@@ -35,6 +35,8 @@ class openbox_config:
     def save(self):
         os.system("rm ~/.config/openbox/autostart")
         os.system("touch ~/.config/openbox/autostart")
+
+        os.system('echo "nitrogen --restore &" >> ~/.config/openbox/autostart')
         if self.workspace :
             os.system('echo "pcmanfm --desktop &" >> ~/.config/openbox/autostart')
         if self.window_compositor :
@@ -84,43 +86,43 @@ Label( frame, text="openbox config menu:" ).pack( side = TOP )
 
 #workspace_cb
 workspace_cb_var = IntVar()
-workspace_cb = Checkbutton(frame, text='workspace',variable=workspace_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+workspace_cb = Checkbutton(frame, text='interactible workspace',variable=workspace_cb_var, command=ob_conf.get)
 workspace_cb.select()
 workspace_cb.pack( side = TOP )
 
 #window_compositor_cb
 window_compositor_cb_var = IntVar()
-window_compositor_cb = Checkbutton(frame, text='window compositor',variable=window_compositor_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+window_compositor_cb = Checkbutton(frame, text='window compositor',variable=window_compositor_cb_var, command=ob_conf.get)
 window_compositor_cb.select()
 window_compositor_cb.pack( side = TOP )
 
 #taskbar_cb
 taskbar_cb_var = IntVar()
-taskbar_cb = Checkbutton(frame, text='taskbar',variable=taskbar_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+taskbar_cb = Checkbutton(frame, text='taskbar',variable=taskbar_cb_var, command=ob_conf.get)
 taskbar_cb.select()
 taskbar_cb.pack( side = TOP )
 
 #dock_cb
 dock_cb_var = IntVar()
-dock_cb = Checkbutton(frame, text='dock',variable=dock_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+dock_cb = Checkbutton(frame, text='dock',variable=dock_cb_var, command=ob_conf.get)
 dock_cb.select()
 dock_cb.pack( side = TOP )
 
 #network_applet_cb
 network_applet_cb_var = IntVar()
-network_applet_cb = Checkbutton(frame, text='network applet',variable=network_applet_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+network_applet_cb = Checkbutton(frame, text='network applet',variable=network_applet_cb_var, command=ob_conf.get)
 network_applet_cb.select()
 network_applet_cb.pack( side = TOP )
 
 #audio_applet_cb
 audio_applet_cb_var = IntVar()
-audio_applet_cb = Checkbutton(frame, text='audio applet',variable=audio_applet_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+audio_applet_cb = Checkbutton(frame, text='audio applet',variable=audio_applet_cb_var, command=ob_conf.get)
 audio_applet_cb.select()
 audio_applet_cb.pack( side = TOP )
 
 #bluetooth_applet_cb
 bluetooth_applet_cb_var = IntVar()
-bluetooth_applet_cb = Checkbutton(frame, text='bluetooth applet',variable=bluetooth_applet_cb_var, onvalue=1, offvalue=0,command=ob_conf.get)
+bluetooth_applet_cb = Checkbutton(frame, text='bluetooth applet',variable=bluetooth_applet_cb_var, command=ob_conf.get)
 bluetooth_applet_cb.select()
 bluetooth_applet_cb.pack( side = TOP )
 
