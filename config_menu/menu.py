@@ -86,7 +86,7 @@ Label( frame, text="openbox config menu:" ).pack( side = TOP )
 
 #workspace_cb
 workspace_cb_var = IntVar()
-workspace_cb = Checkbutton(frame, text='interactible workspace',variable=workspace_cb_var, command=ob_conf.get)
+workspace_cb = Checkbutton(frame, text='interactible workspace (donot work well with dock)',variable=workspace_cb_var, command=ob_conf.get)
 workspace_cb.select()
 workspace_cb.pack( side = TOP )
 

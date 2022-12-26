@@ -20,7 +20,7 @@ echo "Exec=python3 /usr/share/openbox_autostart_config_menu/menu.py" >> /usr/sha
 echo "Path=/usr/share/openbox_autostart_config_menu/" >> /usr/share/applications/openbox_autostart_config_menu.desktop
 echo "Type=Application" >> /usr/share/applications/openbox_autostart_config_menu.desktop
 echo "Name=openbox autostart config menu" >> /usr/share/applications/openbox_autostart_config_menu.desktop
-echo "Icon=/usr/share/openbox_autostart_config_menu/config_menu/config_icon.ico" >> /usr/share/applications/openbox_autostart_config_menu.desktop
+echo "Icon=/usr/share/openbox_autostart_config_menu/config_icon.png" >> /usr/share/applications/openbox_autostart_config_menu.desktop
 
 
 
