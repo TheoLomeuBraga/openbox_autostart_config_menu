@@ -76,7 +76,7 @@ ob_conf = openbox_config()
 
 window = Tk() 
 window.title('openbox config')
-window.geometry("300x300")
+window.geometry("400x300")
 
 
 
