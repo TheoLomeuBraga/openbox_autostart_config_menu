@@ -1,3 +1,5 @@
+import sys
+sys.path.append("/usr/share/openbox_autostart_config_menu/")
 import os
 from tkinter import *
 
