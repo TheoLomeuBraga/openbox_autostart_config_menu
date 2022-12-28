@@ -15,8 +15,8 @@
   <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu"/>
   <separator />
   <menu id="openbox" label="openbox">
-    <item label="openbox conf center">
-      <action name="Execute"><execute>python3 /usr/share/openbox_config_center/center.py</execute></action>
+    <item label="desktop conf">
+      <action name="Execute"><execute>pcmanfm --desktop-pref</execute></action>
     </item>
     <item label="openbox auto start conf">
       <action name="Execute"><execute>python3 /usr/share/openbox_autostart_config_menu/menu.py</execute></action>
