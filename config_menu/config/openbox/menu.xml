@@ -15,6 +15,9 @@
   <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu"/>
   <separator />
   <menu id="openbox" label="openbox">
+    <item label="openbox auto start conf">
+      <action name="Execute"><execute>python3 /usr/share/openbox_autostart_config_menu/menu.py</execute></action>
+    </item>
     <item label="ObConf">
       <action name="Execute"><execute>obconf</execute></action>
     </item>
