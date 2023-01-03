@@ -48,9 +48,9 @@ rm -r ~/.config/rofi
 rm -r ~/.config/tint2
 
 
-cp -R ./config_menu/config/nitrogen ~/.config/nitrogen
-cp -R ./config_menu/config/pcmanfm ~/.config/pcmanfm
-cp -R ./config_menu/config/openbox ~/.config/openbox
-cp -R ./config_menu/config/plank ~/.config/plank
-cp -R ./config_menu/config/rofi ~/.config/rofi
-cp -R ./config_menu/config/tint2 ~/.config/tint2
+cp -R ./config_menu/config/nitrogen ~/.config
+cp -R ./config_menu/config/pcmanfm ~/.config
+cp -R ./config_menu/config/openbox ~/.config
+cp -R ./config_menu/config/plank ~/.config
+cp -R ./config_menu/config/rofi ~/.config
+cp -R ./config_menu/config/tint2 ~/.config
