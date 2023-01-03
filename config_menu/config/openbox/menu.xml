@@ -27,11 +27,11 @@
     <item label="Reconfigure">
       <action name="Reconfigure" />
     </item>
-</menu>
-  <menu id="power" label="power">
     <item label="Restart openbox">
       <action name="Restart" />
     </item>
+</menu>
+  <menu id="power" label="power">
     <separator />
     <item label="log out">
       <action name="Exit" />
