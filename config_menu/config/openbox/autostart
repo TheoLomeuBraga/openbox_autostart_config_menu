@@ -1,5 +1,7 @@
 nitrogen --restore &
+pcmanfm --desktop &
 xcompmgr -t5 -l5 -r4.2 -o.55  &
 tint2 &
 nm-applet &
 pnmixer &
+blueman-applet &

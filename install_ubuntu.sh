@@ -1,6 +1,6 @@
 sudo apt -y install openbox plank rofi tint2 xcompmgr pcmanfm nitrogen
 sudo apt -y install blueman network-manager
-sudo apt -y install firefox thunar gnome-terminal
+sudo apt -y install firefox gnome-terminal
 sudo apt -y install gnome-icon-theme-full
 sudo apt -y install python-tk
 sudo apt -y install python3-tk
@@ -46,6 +46,8 @@ rm -r ~/.config/openbox
 rm -r ~/.config/plank
 rm -r ~/.config/rofi
 rm -r ~/.config/tint2
+sudo rm -r /usr/share/themes/Nightmare-02-improved
+
 
 
 cp -R ./config_menu/config/nitrogen ~/.config
