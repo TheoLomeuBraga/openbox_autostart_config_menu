@@ -1,4 +1,4 @@
-sudo apt -y install openbox plank rofi tint2 xcompmgr pcmanfm nitrogen
+sudo apt -y install openbox plank rofi tint2 xcompmgr pcmanfm nitrogen spacefm
 sudo apt -y install blueman network-manager
 sudo apt -y install firefox gnome-terminal
 sudo apt -y install gnome-icon-theme-full
@@ -41,7 +41,7 @@ echo "Icon=/usr/share/openbox_config_center/config_icon.png" >> /usr/share/appli
 
 
 rm -r ~/.config/nitrogen
-rm -r ~/.config/pcmanfm
+rm -r ~/.config/spacefm
 rm -r ~/.config/openbox
 rm -r ~/.config/plank
 rm -r ~/.config/rofi
@@ -51,7 +51,7 @@ sudo rm -r /usr/share/themes/Nightmare-02-improved
 
 
 cp -R ./config_menu/config/nitrogen ~/.config
-cp -R ./config_menu/config/pcmanfm ~/.config
+cp -R ./config_menu/config/spacefm ~/.config
 cp -R ./config_menu/config/openbox ~/.config
 cp -R ./config_menu/config/plank ~/.config
 cp -R ./config_menu/config/rofi ~/.config

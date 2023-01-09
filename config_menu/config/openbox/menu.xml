@@ -16,7 +16,7 @@
   <separator />
   <menu id="openbox" label="openbox">
     <item label="desktop conf">
-      <action name="Execute"><execute>pcmanfm --desktop-pref</execute></action>
+      <action name="Execute"><execute>spacefm --desktop-pref</execute></action>
     </item>
     <item label="openbox auto start conf">
       <action name="Execute"><execute>python3 /usr/share/openbox_autostart_config_menu/menu.py</execute></action>
@@ -32,7 +32,6 @@
     </item>
 </menu>
   <menu id="power" label="power">
-    <separator />
     <item label="log out">
       <action name="Exit" />
     </item>

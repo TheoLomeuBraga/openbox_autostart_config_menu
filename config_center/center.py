@@ -12,7 +12,7 @@ def open_openbox_auto_start_configurations_menu():
     os.system("python3 /usr/share/openbox_autostart_config_menu/menu.py &")
 
 def open_desktop_configurations_menu():
-    os.system("pcmanfm --desktop-pref &")
+    os.system("spacefm --desktop-pref &")
 
 
 

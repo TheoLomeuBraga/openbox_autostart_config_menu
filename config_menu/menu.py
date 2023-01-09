@@ -40,7 +40,7 @@ class openbox_config:
 
         os.system('echo "nitrogen --restore &" >> ~/.config/openbox/autostart')
         if self.workspace :
-            os.system('echo "pcmanfm --desktop &" >> ~/.config/openbox/autostart')
+            os.system('echo "space --desktop &" >> ~/.config/openbox/autostart')
         if self.window_compositor :
             os.system('echo "xcompmgr -t5 -l5 -r4.2 -o.55  &" >> ~/.config/openbox/autostart')
         if self.taskbar :
